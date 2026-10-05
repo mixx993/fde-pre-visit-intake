@@ -1,0 +1,153 @@
+{
+  "_meta": {
+    "company": "示例电商公司",
+    "filled_by": "运营组长",
+    "updated": "2026-10-05"
+  },
+  "basic": {
+    "team_groups": "运营 5 人、剪辑 2 人，没有分组",
+    "decision_maker": "王总",
+    "contact": "运营组长小李，微信",
+    "staff_involved": "运营 5 人负责发布，剪辑 2 人负责出片",
+    "accounts": "约 20 个",
+    "daily_output": "每天剪约 40 条",
+    "daily_publish": "每个号每天 3 条，共约 60 条",
+    "peak_time": "晚上 7–9 点",
+    "hope_save": "每天手动一条条上传和挂商品",
+    "most_painful": "上传要等很久，号多了容易漏发",
+    "worry": "账号被平台限流",
+    "cooperation_mode": "先做一个能用的，后面再看",
+    "cannot_touch": "财务电脑不能动",
+    "no_disturb": "晚上 7–9 点发布高峰",
+    "test_accounts": "测试号 A、测试号 B"
+  },
+  "needs": [
+    {
+      "name": "自动发布视频",
+      "problem": "员工每天手动发几十条，太费人",
+      "sop_doc": "",
+      "steps": [
+        {
+          "what": "在发布工具里切换到要发的账号",
+          "who": "运营",
+          "software": "多账号发布工具",
+          "duration": "10 秒",
+          "per_day": "每号 1 次",
+          "pain": "",
+          "file": "发布录屏.mp4"
+        },
+        {
+          "what": "上传视频，描述留空，位置选不显示",
+          "who": "运营",
+          "software": "多账号发布工具",
+          "duration": "约 1 分钟",
+          "per_day": "每号 3 次",
+          "pain": "上传要等，等的时候干不了别的",
+          "file": "发布录屏.mp4"
+        },
+        {
+          "what": "挂商品：粘贴商品链接，识别后添加",
+          "who": "运营",
+          "software": "多账号发布工具",
+          "duration": "20 秒",
+          "per_day": "每号 3 次",
+          "pain": "链接经常粘错",
+          "file": "发布录屏.mp4"
+        },
+        {
+          "what": "保存草稿，过一会儿统一发表",
+          "who": "运营",
+          "software": "多账号发布工具",
+          "duration": "10 秒",
+          "per_day": "每号 3 次",
+          "pain": "",
+          "file": ""
+        }
+      ]
+    }
+  ],
+  "computers": [
+    {
+      "name": "发布机 1（运营用）",
+      "os": "Windows 10 专业版",
+      "cpu": "i5-12400",
+      "ram": "16 GB",
+      "gpu": "集成显卡",
+      "screenshot": "发布机1-系统信息.png"
+    }
+  ],
+  "software": [
+    {
+      "name": "剪映专业版",
+      "version": "5.9",
+      "install": "官网下载安装",
+      "paid": "是",
+      "need": "剪辑",
+      "screenshot": "剪映-关于.png"
+    },
+    {
+      "name": "多账号发布工具",
+      "version": "1.0.0",
+      "install": "解压直接运行",
+      "paid": "是",
+      "need": "自动发布视频",
+      "screenshot": ""
+    }
+  ],
+  "network": {
+    "upload": "上行 50 Mbps",
+    "nas": "没有，各存各的电脑",
+    "storage": "D 盘“成片”文件夹，按日期分",
+    "file_size": "500 MB 左右"
+  },
+  "files": [
+    {
+      "filename": "发布录屏.mp4",
+      "method": "网盘",
+      "submitted": "已提交"
+    },
+    {
+      "filename": "",
+      "method": "",
+      "submitted": "还没有"
+    },
+    {
+      "filename": "成片样例.mp4",
+      "method": "网盘",
+      "submitted": "已提交"
+    },
+    {
+      "filename": "",
+      "method": "",
+      "submitted": "没有这个文件"
+    },
+    {
+      "filename": "发布机1-系统信息.png、剪映-关于.png",
+      "method": "网盘",
+      "submitted": "已提交"
+    },
+    {
+      "filename": "",
+      "method": "",
+      "submitted": "没有这个文件"
+    }
+  ],
+  "devices": [
+    {
+      "name": "前台收银机",
+      "type": "收银机",
+      "model": "看照片",
+      "os": "安卓",
+      "can_install": "不清楚",
+      "vendor": "收银系统服务商，客服电话见铭牌",
+      "warranty": "不清楚",
+      "network": "能上网",
+      "owner": "店长",
+      "vendor_onsite": "可以预约",
+      "downtime": "每天打烊后",
+      "interfaces": "USB、网口",
+      "data_flow": "每天导出销售表到 U 盘，再拷到电脑",
+      "photos": "收银机-铭牌.jpg、收银机-关于.jpg、收银机-接口.jpg、收银机-界面.jpg"
+    }
+  ]
+}

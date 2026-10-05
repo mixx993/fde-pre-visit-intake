@@ -1,0 +1,7 @@
+.DS_Store
+__pycache__/
+*.pyc
+*_已填.xlsx
+answers.json
+env.json
+*.zip

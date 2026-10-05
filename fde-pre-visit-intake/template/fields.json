@@ -1,0 +1,2803 @@
+{
+ "template": "intake_form.xlsx",
+ "files_preset": [
+  {
+   "need": "每个需求",
+   "content": "员工从头到尾真实操作一遍的录屏"
+  },
+  {
+   "need": "每个需求",
+   "content": "这个需求的输入样例（比如一条要处理的原始视频、一份要录入的表格）"
+  },
+  {
+   "need": "每个需求",
+   "content": "这个需求的产出样例（比如一条做好的成片）"
+  },
+  {
+   "need": "每个需求",
+   "content": "相关软件的导出 / 设置页面截图（比如剪辑软件的导出设置）"
+  },
+  {
+   "need": "全部",
+   "content": "第三、五张表里提到的“关于”页、系统信息截图和设备照片"
+  },
+  {
+   "need": "全部",
+   "content": "现成的 SOP、操作手册、账号表模板（如有，账号可用代号）"
+  }
+ ],
+ "fields": [
+  {
+   "id": "basic.team_groups",
+   "sheet": "1 基本情况",
+   "sheet_index": 2,
+   "cell": "B5",
+   "label": "公司分几个组？每组几个人？"
+  },
+  {
+   "id": "basic.decision_maker",
+   "sheet": "1 基本情况",
+   "sheet_index": 2,
+   "cell": "B6",
+   "label": "谁做最终决定？"
+  },
+  {
+   "id": "basic.contact",
+   "sheet": "1 基本情况",
+   "sheet_index": 2,
+   "cell": "B7",
+   "label": "日常和我们对接的是谁？怎么联系？"
+  },
+  {
+   "id": "basic.staff_involved",
+   "sheet": "1 基本情况",
+   "sheet_index": 2,
+   "cell": "B8",
+   "label": "哪些员工在做这次要改进的工作？"
+  },
+  {
+   "id": "basic.accounts",
+   "sheet": "1 基本情况",
+   "sheet_index": 2,
+   "cell": "B10",
+   "label": "一共有多少个账号？"
+  },
+  {
+   "id": "basic.daily_output",
+   "sheet": "1 基本情况",
+   "sheet_index": 2,
+   "cell": "B11",
+   "label": "每天大约产出多少条内容？"
+  },
+  {
+   "id": "basic.daily_publish",
+   "sheet": "1 基本情况",
+   "sheet_index": 2,
+   "cell": "B12",
+   "label": "每天大约发布多少条？"
+  },
+  {
+   "id": "basic.peak_time",
+   "sheet": "1 基本情况",
+   "sheet_index": 2,
+   "cell": "B13",
+   "label": "一天里最忙的时段？"
+  },
+  {
+   "id": "basic.hope_save",
+   "sheet": "1 基本情况",
+   "sheet_index": 2,
+   "cell": "B15",
+   "label": "做成以后，您最希望省掉哪件事？"
+  },
+  {
+   "id": "basic.most_painful",
+   "sheet": "1 基本情况",
+   "sheet_index": 2,
+   "cell": "B16",
+   "label": "现在最花时间、最让人头疼的是哪一步？"
+  },
+  {
+   "id": "basic.worry",
+   "sheet": "1 基本情况",
+   "sheet_index": 2,
+   "cell": "B17",
+   "label": "对这次合作，您最担心什么？"
+  },
+  {
+   "id": "basic.cooperation_mode",
+   "sheet": "1 基本情况",
+   "sheet_index": 2,
+   "cell": "B18",
+   "label": "希望我们做一次性工具，还是长期帮忙维护？"
+  },
+  {
+   "id": "basic.cannot_touch",
+   "sheet": "1 基本情况",
+   "sheet_index": 2,
+   "cell": "B20",
+   "label": "哪些电脑或账号不能动？"
+  },
+  {
+   "id": "basic.no_disturb",
+   "sheet": "1 基本情况",
+   "sheet_index": 2,
+   "cell": "B21",
+   "label": "什么时间不方便打扰？"
+  },
+  {
+   "id": "basic.test_accounts",
+   "sheet": "1 基本情况",
+   "sheet_index": 2,
+   "cell": "B22",
+   "label": "可以拿来测试的账号有哪些？（写代号即可）"
+  },
+  {
+   "id": "needs.0.name",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "C5",
+   "label": "需求名称"
+  },
+  {
+   "id": "needs.0.problem",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "C6",
+   "label": "想解决什么问题？"
+  },
+  {
+   "id": "needs.0.sop_doc",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "C7",
+   "label": "现成的 SOP 文档（写文件名，没有就空着）"
+  },
+  {
+   "id": "needs.0.steps.0.what",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "B10",
+   "label": "这一步做什么"
+  },
+  {
+   "id": "needs.0.steps.0.who",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "C10",
+   "label": "谁来做"
+  },
+  {
+   "id": "needs.0.steps.0.software",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "D10",
+   "label": "用什么软件"
+  },
+  {
+   "id": "needs.0.steps.0.duration",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "E10",
+   "label": "每次大约多久"
+  },
+  {
+   "id": "needs.0.steps.0.per_day",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "F10",
+   "label": "每天做几次"
+  },
+  {
+   "id": "needs.0.steps.0.pain",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "G10",
+   "label": "这一步最麻烦的地方"
+  },
+  {
+   "id": "needs.0.steps.0.file",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "H10",
+   "label": "录屏 / 截图文件名"
+  },
+  {
+   "id": "needs.0.steps.1.what",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "B11",
+   "label": "这一步做什么"
+  },
+  {
+   "id": "needs.0.steps.1.who",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "C11",
+   "label": "谁来做"
+  },
+  {
+   "id": "needs.0.steps.1.software",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "D11",
+   "label": "用什么软件"
+  },
+  {
+   "id": "needs.0.steps.1.duration",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "E11",
+   "label": "每次大约多久"
+  },
+  {
+   "id": "needs.0.steps.1.per_day",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "F11",
+   "label": "每天做几次"
+  },
+  {
+   "id": "needs.0.steps.1.pain",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "G11",
+   "label": "这一步最麻烦的地方"
+  },
+  {
+   "id": "needs.0.steps.1.file",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "H11",
+   "label": "录屏 / 截图文件名"
+  },
+  {
+   "id": "needs.0.steps.2.what",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "B12",
+   "label": "这一步做什么"
+  },
+  {
+   "id": "needs.0.steps.2.who",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "C12",
+   "label": "谁来做"
+  },
+  {
+   "id": "needs.0.steps.2.software",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "D12",
+   "label": "用什么软件"
+  },
+  {
+   "id": "needs.0.steps.2.duration",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "E12",
+   "label": "每次大约多久"
+  },
+  {
+   "id": "needs.0.steps.2.per_day",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "F12",
+   "label": "每天做几次"
+  },
+  {
+   "id": "needs.0.steps.2.pain",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "G12",
+   "label": "这一步最麻烦的地方"
+  },
+  {
+   "id": "needs.0.steps.2.file",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "H12",
+   "label": "录屏 / 截图文件名"
+  },
+  {
+   "id": "needs.0.steps.3.what",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "B13",
+   "label": "这一步做什么"
+  },
+  {
+   "id": "needs.0.steps.3.who",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "C13",
+   "label": "谁来做"
+  },
+  {
+   "id": "needs.0.steps.3.software",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "D13",
+   "label": "用什么软件"
+  },
+  {
+   "id": "needs.0.steps.3.duration",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "E13",
+   "label": "每次大约多久"
+  },
+  {
+   "id": "needs.0.steps.3.per_day",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "F13",
+   "label": "每天做几次"
+  },
+  {
+   "id": "needs.0.steps.3.pain",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "G13",
+   "label": "这一步最麻烦的地方"
+  },
+  {
+   "id": "needs.0.steps.3.file",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "H13",
+   "label": "录屏 / 截图文件名"
+  },
+  {
+   "id": "needs.0.steps.4.what",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "B14",
+   "label": "这一步做什么"
+  },
+  {
+   "id": "needs.0.steps.4.who",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "C14",
+   "label": "谁来做"
+  },
+  {
+   "id": "needs.0.steps.4.software",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "D14",
+   "label": "用什么软件"
+  },
+  {
+   "id": "needs.0.steps.4.duration",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "E14",
+   "label": "每次大约多久"
+  },
+  {
+   "id": "needs.0.steps.4.per_day",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "F14",
+   "label": "每天做几次"
+  },
+  {
+   "id": "needs.0.steps.4.pain",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "G14",
+   "label": "这一步最麻烦的地方"
+  },
+  {
+   "id": "needs.0.steps.4.file",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "H14",
+   "label": "录屏 / 截图文件名"
+  },
+  {
+   "id": "needs.0.steps.5.what",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "B15",
+   "label": "这一步做什么"
+  },
+  {
+   "id": "needs.0.steps.5.who",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "C15",
+   "label": "谁来做"
+  },
+  {
+   "id": "needs.0.steps.5.software",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "D15",
+   "label": "用什么软件"
+  },
+  {
+   "id": "needs.0.steps.5.duration",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "E15",
+   "label": "每次大约多久"
+  },
+  {
+   "id": "needs.0.steps.5.per_day",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "F15",
+   "label": "每天做几次"
+  },
+  {
+   "id": "needs.0.steps.5.pain",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "G15",
+   "label": "这一步最麻烦的地方"
+  },
+  {
+   "id": "needs.0.steps.5.file",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "H15",
+   "label": "录屏 / 截图文件名"
+  },
+  {
+   "id": "needs.0.steps.6.what",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "B16",
+   "label": "这一步做什么"
+  },
+  {
+   "id": "needs.0.steps.6.who",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "C16",
+   "label": "谁来做"
+  },
+  {
+   "id": "needs.0.steps.6.software",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "D16",
+   "label": "用什么软件"
+  },
+  {
+   "id": "needs.0.steps.6.duration",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "E16",
+   "label": "每次大约多久"
+  },
+  {
+   "id": "needs.0.steps.6.per_day",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "F16",
+   "label": "每天做几次"
+  },
+  {
+   "id": "needs.0.steps.6.pain",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "G16",
+   "label": "这一步最麻烦的地方"
+  },
+  {
+   "id": "needs.0.steps.6.file",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "H16",
+   "label": "录屏 / 截图文件名"
+  },
+  {
+   "id": "needs.0.steps.7.what",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "B17",
+   "label": "这一步做什么"
+  },
+  {
+   "id": "needs.0.steps.7.who",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "C17",
+   "label": "谁来做"
+  },
+  {
+   "id": "needs.0.steps.7.software",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "D17",
+   "label": "用什么软件"
+  },
+  {
+   "id": "needs.0.steps.7.duration",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "E17",
+   "label": "每次大约多久"
+  },
+  {
+   "id": "needs.0.steps.7.per_day",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "F17",
+   "label": "每天做几次"
+  },
+  {
+   "id": "needs.0.steps.7.pain",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "G17",
+   "label": "这一步最麻烦的地方"
+  },
+  {
+   "id": "needs.0.steps.7.file",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "H17",
+   "label": "录屏 / 截图文件名"
+  },
+  {
+   "id": "needs.1.name",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "C20",
+   "label": "需求名称"
+  },
+  {
+   "id": "needs.1.problem",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "C21",
+   "label": "想解决什么问题？"
+  },
+  {
+   "id": "needs.1.sop_doc",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "C22",
+   "label": "现成的 SOP 文档（写文件名，没有就空着）"
+  },
+  {
+   "id": "needs.1.steps.0.what",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "B24",
+   "label": "这一步做什么"
+  },
+  {
+   "id": "needs.1.steps.0.who",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "C24",
+   "label": "谁来做"
+  },
+  {
+   "id": "needs.1.steps.0.software",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "D24",
+   "label": "用什么软件"
+  },
+  {
+   "id": "needs.1.steps.0.duration",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "E24",
+   "label": "每次大约多久"
+  },
+  {
+   "id": "needs.1.steps.0.per_day",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "F24",
+   "label": "每天做几次"
+  },
+  {
+   "id": "needs.1.steps.0.pain",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "G24",
+   "label": "这一步最麻烦的地方"
+  },
+  {
+   "id": "needs.1.steps.0.file",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "H24",
+   "label": "录屏 / 截图文件名"
+  },
+  {
+   "id": "needs.1.steps.1.what",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "B25",
+   "label": "这一步做什么"
+  },
+  {
+   "id": "needs.1.steps.1.who",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "C25",
+   "label": "谁来做"
+  },
+  {
+   "id": "needs.1.steps.1.software",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "D25",
+   "label": "用什么软件"
+  },
+  {
+   "id": "needs.1.steps.1.duration",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "E25",
+   "label": "每次大约多久"
+  },
+  {
+   "id": "needs.1.steps.1.per_day",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "F25",
+   "label": "每天做几次"
+  },
+  {
+   "id": "needs.1.steps.1.pain",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "G25",
+   "label": "这一步最麻烦的地方"
+  },
+  {
+   "id": "needs.1.steps.1.file",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "H25",
+   "label": "录屏 / 截图文件名"
+  },
+  {
+   "id": "needs.1.steps.2.what",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "B26",
+   "label": "这一步做什么"
+  },
+  {
+   "id": "needs.1.steps.2.who",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "C26",
+   "label": "谁来做"
+  },
+  {
+   "id": "needs.1.steps.2.software",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "D26",
+   "label": "用什么软件"
+  },
+  {
+   "id": "needs.1.steps.2.duration",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "E26",
+   "label": "每次大约多久"
+  },
+  {
+   "id": "needs.1.steps.2.per_day",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "F26",
+   "label": "每天做几次"
+  },
+  {
+   "id": "needs.1.steps.2.pain",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "G26",
+   "label": "这一步最麻烦的地方"
+  },
+  {
+   "id": "needs.1.steps.2.file",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "H26",
+   "label": "录屏 / 截图文件名"
+  },
+  {
+   "id": "needs.1.steps.3.what",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "B27",
+   "label": "这一步做什么"
+  },
+  {
+   "id": "needs.1.steps.3.who",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "C27",
+   "label": "谁来做"
+  },
+  {
+   "id": "needs.1.steps.3.software",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "D27",
+   "label": "用什么软件"
+  },
+  {
+   "id": "needs.1.steps.3.duration",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "E27",
+   "label": "每次大约多久"
+  },
+  {
+   "id": "needs.1.steps.3.per_day",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "F27",
+   "label": "每天做几次"
+  },
+  {
+   "id": "needs.1.steps.3.pain",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "G27",
+   "label": "这一步最麻烦的地方"
+  },
+  {
+   "id": "needs.1.steps.3.file",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "H27",
+   "label": "录屏 / 截图文件名"
+  },
+  {
+   "id": "needs.1.steps.4.what",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "B28",
+   "label": "这一步做什么"
+  },
+  {
+   "id": "needs.1.steps.4.who",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "C28",
+   "label": "谁来做"
+  },
+  {
+   "id": "needs.1.steps.4.software",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "D28",
+   "label": "用什么软件"
+  },
+  {
+   "id": "needs.1.steps.4.duration",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "E28",
+   "label": "每次大约多久"
+  },
+  {
+   "id": "needs.1.steps.4.per_day",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "F28",
+   "label": "每天做几次"
+  },
+  {
+   "id": "needs.1.steps.4.pain",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "G28",
+   "label": "这一步最麻烦的地方"
+  },
+  {
+   "id": "needs.1.steps.4.file",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "H28",
+   "label": "录屏 / 截图文件名"
+  },
+  {
+   "id": "needs.1.steps.5.what",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "B29",
+   "label": "这一步做什么"
+  },
+  {
+   "id": "needs.1.steps.5.who",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "C29",
+   "label": "谁来做"
+  },
+  {
+   "id": "needs.1.steps.5.software",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "D29",
+   "label": "用什么软件"
+  },
+  {
+   "id": "needs.1.steps.5.duration",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "E29",
+   "label": "每次大约多久"
+  },
+  {
+   "id": "needs.1.steps.5.per_day",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "F29",
+   "label": "每天做几次"
+  },
+  {
+   "id": "needs.1.steps.5.pain",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "G29",
+   "label": "这一步最麻烦的地方"
+  },
+  {
+   "id": "needs.1.steps.5.file",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "H29",
+   "label": "录屏 / 截图文件名"
+  },
+  {
+   "id": "needs.1.steps.6.what",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "B30",
+   "label": "这一步做什么"
+  },
+  {
+   "id": "needs.1.steps.6.who",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "C30",
+   "label": "谁来做"
+  },
+  {
+   "id": "needs.1.steps.6.software",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "D30",
+   "label": "用什么软件"
+  },
+  {
+   "id": "needs.1.steps.6.duration",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "E30",
+   "label": "每次大约多久"
+  },
+  {
+   "id": "needs.1.steps.6.per_day",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "F30",
+   "label": "每天做几次"
+  },
+  {
+   "id": "needs.1.steps.6.pain",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "G30",
+   "label": "这一步最麻烦的地方"
+  },
+  {
+   "id": "needs.1.steps.6.file",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "H30",
+   "label": "录屏 / 截图文件名"
+  },
+  {
+   "id": "needs.1.steps.7.what",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "B31",
+   "label": "这一步做什么"
+  },
+  {
+   "id": "needs.1.steps.7.who",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "C31",
+   "label": "谁来做"
+  },
+  {
+   "id": "needs.1.steps.7.software",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "D31",
+   "label": "用什么软件"
+  },
+  {
+   "id": "needs.1.steps.7.duration",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "E31",
+   "label": "每次大约多久"
+  },
+  {
+   "id": "needs.1.steps.7.per_day",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "F31",
+   "label": "每天做几次"
+  },
+  {
+   "id": "needs.1.steps.7.pain",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "G31",
+   "label": "这一步最麻烦的地方"
+  },
+  {
+   "id": "needs.1.steps.7.file",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "H31",
+   "label": "录屏 / 截图文件名"
+  },
+  {
+   "id": "needs.2.name",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "C34",
+   "label": "需求名称"
+  },
+  {
+   "id": "needs.2.problem",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "C35",
+   "label": "想解决什么问题？"
+  },
+  {
+   "id": "needs.2.sop_doc",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "C36",
+   "label": "现成的 SOP 文档（写文件名，没有就空着）"
+  },
+  {
+   "id": "needs.2.steps.0.what",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "B38",
+   "label": "这一步做什么"
+  },
+  {
+   "id": "needs.2.steps.0.who",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "C38",
+   "label": "谁来做"
+  },
+  {
+   "id": "needs.2.steps.0.software",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "D38",
+   "label": "用什么软件"
+  },
+  {
+   "id": "needs.2.steps.0.duration",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "E38",
+   "label": "每次大约多久"
+  },
+  {
+   "id": "needs.2.steps.0.per_day",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "F38",
+   "label": "每天做几次"
+  },
+  {
+   "id": "needs.2.steps.0.pain",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "G38",
+   "label": "这一步最麻烦的地方"
+  },
+  {
+   "id": "needs.2.steps.0.file",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "H38",
+   "label": "录屏 / 截图文件名"
+  },
+  {
+   "id": "needs.2.steps.1.what",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "B39",
+   "label": "这一步做什么"
+  },
+  {
+   "id": "needs.2.steps.1.who",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "C39",
+   "label": "谁来做"
+  },
+  {
+   "id": "needs.2.steps.1.software",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "D39",
+   "label": "用什么软件"
+  },
+  {
+   "id": "needs.2.steps.1.duration",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "E39",
+   "label": "每次大约多久"
+  },
+  {
+   "id": "needs.2.steps.1.per_day",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "F39",
+   "label": "每天做几次"
+  },
+  {
+   "id": "needs.2.steps.1.pain",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "G39",
+   "label": "这一步最麻烦的地方"
+  },
+  {
+   "id": "needs.2.steps.1.file",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "H39",
+   "label": "录屏 / 截图文件名"
+  },
+  {
+   "id": "needs.2.steps.2.what",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "B40",
+   "label": "这一步做什么"
+  },
+  {
+   "id": "needs.2.steps.2.who",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "C40",
+   "label": "谁来做"
+  },
+  {
+   "id": "needs.2.steps.2.software",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "D40",
+   "label": "用什么软件"
+  },
+  {
+   "id": "needs.2.steps.2.duration",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "E40",
+   "label": "每次大约多久"
+  },
+  {
+   "id": "needs.2.steps.2.per_day",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "F40",
+   "label": "每天做几次"
+  },
+  {
+   "id": "needs.2.steps.2.pain",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "G40",
+   "label": "这一步最麻烦的地方"
+  },
+  {
+   "id": "needs.2.steps.2.file",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "H40",
+   "label": "录屏 / 截图文件名"
+  },
+  {
+   "id": "needs.2.steps.3.what",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "B41",
+   "label": "这一步做什么"
+  },
+  {
+   "id": "needs.2.steps.3.who",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "C41",
+   "label": "谁来做"
+  },
+  {
+   "id": "needs.2.steps.3.software",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "D41",
+   "label": "用什么软件"
+  },
+  {
+   "id": "needs.2.steps.3.duration",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "E41",
+   "label": "每次大约多久"
+  },
+  {
+   "id": "needs.2.steps.3.per_day",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "F41",
+   "label": "每天做几次"
+  },
+  {
+   "id": "needs.2.steps.3.pain",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "G41",
+   "label": "这一步最麻烦的地方"
+  },
+  {
+   "id": "needs.2.steps.3.file",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "H41",
+   "label": "录屏 / 截图文件名"
+  },
+  {
+   "id": "needs.2.steps.4.what",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "B42",
+   "label": "这一步做什么"
+  },
+  {
+   "id": "needs.2.steps.4.who",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "C42",
+   "label": "谁来做"
+  },
+  {
+   "id": "needs.2.steps.4.software",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "D42",
+   "label": "用什么软件"
+  },
+  {
+   "id": "needs.2.steps.4.duration",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "E42",
+   "label": "每次大约多久"
+  },
+  {
+   "id": "needs.2.steps.4.per_day",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "F42",
+   "label": "每天做几次"
+  },
+  {
+   "id": "needs.2.steps.4.pain",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "G42",
+   "label": "这一步最麻烦的地方"
+  },
+  {
+   "id": "needs.2.steps.4.file",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "H42",
+   "label": "录屏 / 截图文件名"
+  },
+  {
+   "id": "needs.2.steps.5.what",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "B43",
+   "label": "这一步做什么"
+  },
+  {
+   "id": "needs.2.steps.5.who",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "C43",
+   "label": "谁来做"
+  },
+  {
+   "id": "needs.2.steps.5.software",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "D43",
+   "label": "用什么软件"
+  },
+  {
+   "id": "needs.2.steps.5.duration",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "E43",
+   "label": "每次大约多久"
+  },
+  {
+   "id": "needs.2.steps.5.per_day",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "F43",
+   "label": "每天做几次"
+  },
+  {
+   "id": "needs.2.steps.5.pain",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "G43",
+   "label": "这一步最麻烦的地方"
+  },
+  {
+   "id": "needs.2.steps.5.file",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "H43",
+   "label": "录屏 / 截图文件名"
+  },
+  {
+   "id": "needs.2.steps.6.what",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "B44",
+   "label": "这一步做什么"
+  },
+  {
+   "id": "needs.2.steps.6.who",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "C44",
+   "label": "谁来做"
+  },
+  {
+   "id": "needs.2.steps.6.software",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "D44",
+   "label": "用什么软件"
+  },
+  {
+   "id": "needs.2.steps.6.duration",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "E44",
+   "label": "每次大约多久"
+  },
+  {
+   "id": "needs.2.steps.6.per_day",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "F44",
+   "label": "每天做几次"
+  },
+  {
+   "id": "needs.2.steps.6.pain",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "G44",
+   "label": "这一步最麻烦的地方"
+  },
+  {
+   "id": "needs.2.steps.6.file",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "H44",
+   "label": "录屏 / 截图文件名"
+  },
+  {
+   "id": "needs.2.steps.7.what",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "B45",
+   "label": "这一步做什么"
+  },
+  {
+   "id": "needs.2.steps.7.who",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "C45",
+   "label": "谁来做"
+  },
+  {
+   "id": "needs.2.steps.7.software",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "D45",
+   "label": "用什么软件"
+  },
+  {
+   "id": "needs.2.steps.7.duration",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "E45",
+   "label": "每次大约多久"
+  },
+  {
+   "id": "needs.2.steps.7.per_day",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "F45",
+   "label": "每天做几次"
+  },
+  {
+   "id": "needs.2.steps.7.pain",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "G45",
+   "label": "这一步最麻烦的地方"
+  },
+  {
+   "id": "needs.2.steps.7.file",
+   "sheet": "2 需求与流程",
+   "sheet_index": 3,
+   "cell": "H45",
+   "label": "录屏 / 截图文件名"
+  },
+  {
+   "id": "computers.0.name",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "A7",
+   "label": ""
+  },
+  {
+   "id": "computers.0.os",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "B7",
+   "label": ""
+  },
+  {
+   "id": "computers.0.cpu",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "C7",
+   "label": ""
+  },
+  {
+   "id": "computers.0.ram",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "D7",
+   "label": ""
+  },
+  {
+   "id": "computers.0.gpu",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "E7",
+   "label": ""
+  },
+  {
+   "id": "computers.0.screenshot",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "F7",
+   "label": ""
+  },
+  {
+   "id": "computers.1.name",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "A8",
+   "label": ""
+  },
+  {
+   "id": "computers.1.os",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "B8",
+   "label": ""
+  },
+  {
+   "id": "computers.1.cpu",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "C8",
+   "label": ""
+  },
+  {
+   "id": "computers.1.ram",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "D8",
+   "label": ""
+  },
+  {
+   "id": "computers.1.gpu",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "E8",
+   "label": ""
+  },
+  {
+   "id": "computers.1.screenshot",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "F8",
+   "label": ""
+  },
+  {
+   "id": "computers.2.name",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "A9",
+   "label": ""
+  },
+  {
+   "id": "computers.2.os",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "B9",
+   "label": ""
+  },
+  {
+   "id": "computers.2.cpu",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "C9",
+   "label": ""
+  },
+  {
+   "id": "computers.2.ram",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "D9",
+   "label": ""
+  },
+  {
+   "id": "computers.2.gpu",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "E9",
+   "label": ""
+  },
+  {
+   "id": "computers.2.screenshot",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "F9",
+   "label": ""
+  },
+  {
+   "id": "computers.3.name",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "A10",
+   "label": ""
+  },
+  {
+   "id": "computers.3.os",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "B10",
+   "label": ""
+  },
+  {
+   "id": "computers.3.cpu",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "C10",
+   "label": ""
+  },
+  {
+   "id": "computers.3.ram",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "D10",
+   "label": ""
+  },
+  {
+   "id": "computers.3.gpu",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "E10",
+   "label": ""
+  },
+  {
+   "id": "computers.3.screenshot",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "F10",
+   "label": ""
+  },
+  {
+   "id": "computers.4.name",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "A11",
+   "label": ""
+  },
+  {
+   "id": "computers.4.os",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "B11",
+   "label": ""
+  },
+  {
+   "id": "computers.4.cpu",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "C11",
+   "label": ""
+  },
+  {
+   "id": "computers.4.ram",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "D11",
+   "label": ""
+  },
+  {
+   "id": "computers.4.gpu",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "E11",
+   "label": ""
+  },
+  {
+   "id": "computers.4.screenshot",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "F11",
+   "label": ""
+  },
+  {
+   "id": "computers.5.name",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "A12",
+   "label": ""
+  },
+  {
+   "id": "computers.5.os",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "B12",
+   "label": ""
+  },
+  {
+   "id": "computers.5.cpu",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "C12",
+   "label": ""
+  },
+  {
+   "id": "computers.5.ram",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "D12",
+   "label": ""
+  },
+  {
+   "id": "computers.5.gpu",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "E12",
+   "label": ""
+  },
+  {
+   "id": "computers.5.screenshot",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "F12",
+   "label": ""
+  },
+  {
+   "id": "software.0.name",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "A17",
+   "label": ""
+  },
+  {
+   "id": "software.0.version",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "B17",
+   "label": ""
+  },
+  {
+   "id": "software.0.install",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "C17",
+   "label": ""
+  },
+  {
+   "id": "software.0.paid",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "D17",
+   "label": ""
+  },
+  {
+   "id": "software.0.need",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "E17",
+   "label": ""
+  },
+  {
+   "id": "software.0.screenshot",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "F17",
+   "label": ""
+  },
+  {
+   "id": "software.1.name",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "A18",
+   "label": ""
+  },
+  {
+   "id": "software.1.version",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "B18",
+   "label": ""
+  },
+  {
+   "id": "software.1.install",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "C18",
+   "label": ""
+  },
+  {
+   "id": "software.1.paid",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "D18",
+   "label": ""
+  },
+  {
+   "id": "software.1.need",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "E18",
+   "label": ""
+  },
+  {
+   "id": "software.1.screenshot",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "F18",
+   "label": ""
+  },
+  {
+   "id": "software.2.name",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "A19",
+   "label": ""
+  },
+  {
+   "id": "software.2.version",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "B19",
+   "label": ""
+  },
+  {
+   "id": "software.2.install",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "C19",
+   "label": ""
+  },
+  {
+   "id": "software.2.paid",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "D19",
+   "label": ""
+  },
+  {
+   "id": "software.2.need",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "E19",
+   "label": ""
+  },
+  {
+   "id": "software.2.screenshot",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "F19",
+   "label": ""
+  },
+  {
+   "id": "software.3.name",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "A20",
+   "label": ""
+  },
+  {
+   "id": "software.3.version",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "B20",
+   "label": ""
+  },
+  {
+   "id": "software.3.install",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "C20",
+   "label": ""
+  },
+  {
+   "id": "software.3.paid",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "D20",
+   "label": ""
+  },
+  {
+   "id": "software.3.need",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "E20",
+   "label": ""
+  },
+  {
+   "id": "software.3.screenshot",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "F20",
+   "label": ""
+  },
+  {
+   "id": "software.4.name",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "A21",
+   "label": ""
+  },
+  {
+   "id": "software.4.version",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "B21",
+   "label": ""
+  },
+  {
+   "id": "software.4.install",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "C21",
+   "label": ""
+  },
+  {
+   "id": "software.4.paid",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "D21",
+   "label": ""
+  },
+  {
+   "id": "software.4.need",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "E21",
+   "label": ""
+  },
+  {
+   "id": "software.4.screenshot",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "F21",
+   "label": ""
+  },
+  {
+   "id": "software.5.name",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "A22",
+   "label": ""
+  },
+  {
+   "id": "software.5.version",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "B22",
+   "label": ""
+  },
+  {
+   "id": "software.5.install",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "C22",
+   "label": ""
+  },
+  {
+   "id": "software.5.paid",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "D22",
+   "label": ""
+  },
+  {
+   "id": "software.5.need",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "E22",
+   "label": ""
+  },
+  {
+   "id": "software.5.screenshot",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "F22",
+   "label": ""
+  },
+  {
+   "id": "software.6.name",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "A23",
+   "label": ""
+  },
+  {
+   "id": "software.6.version",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "B23",
+   "label": ""
+  },
+  {
+   "id": "software.6.install",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "C23",
+   "label": ""
+  },
+  {
+   "id": "software.6.paid",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "D23",
+   "label": ""
+  },
+  {
+   "id": "software.6.need",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "E23",
+   "label": ""
+  },
+  {
+   "id": "software.6.screenshot",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "F23",
+   "label": ""
+  },
+  {
+   "id": "software.7.name",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "A24",
+   "label": ""
+  },
+  {
+   "id": "software.7.version",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "B24",
+   "label": ""
+  },
+  {
+   "id": "software.7.install",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "C24",
+   "label": ""
+  },
+  {
+   "id": "software.7.paid",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "D24",
+   "label": ""
+  },
+  {
+   "id": "software.7.need",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "E24",
+   "label": ""
+  },
+  {
+   "id": "software.7.screenshot",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "F24",
+   "label": ""
+  },
+  {
+   "id": "network.upload",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "C28",
+   "label": "宽带上行速度（可截测速图）"
+  },
+  {
+   "id": "network.nas",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "C29",
+   "label": "有没有共享盘或 NAS？"
+  },
+  {
+   "id": "network.storage",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "C30",
+   "label": "成片和素材平时存在哪？"
+  },
+  {
+   "id": "network.file_size",
+   "sheet": "3 电脑与软件",
+   "sheet_index": 4,
+   "cell": "C31",
+   "label": "一条成片大约多大？"
+  },
+  {
+   "id": "files.0.need",
+   "sheet": "4 文件清单",
+   "sheet_index": 5,
+   "cell": "A6",
+   "label": ""
+  },
+  {
+   "id": "files.0.content",
+   "sheet": "4 文件清单",
+   "sheet_index": 5,
+   "cell": "B6",
+   "label": ""
+  },
+  {
+   "id": "files.0.filename",
+   "sheet": "4 文件清单",
+   "sheet_index": 5,
+   "cell": "C6",
+   "label": ""
+  },
+  {
+   "id": "files.0.method",
+   "sheet": "4 文件清单",
+   "sheet_index": 5,
+   "cell": "D6",
+   "label": ""
+  },
+  {
+   "id": "files.0.submitted",
+   "sheet": "4 文件清单",
+   "sheet_index": 5,
+   "cell": "E6",
+   "label": ""
+  },
+  {
+   "id": "files.1.need",
+   "sheet": "4 文件清单",
+   "sheet_index": 5,
+   "cell": "A7",
+   "label": ""
+  },
+  {
+   "id": "files.1.content",
+   "sheet": "4 文件清单",
+   "sheet_index": 5,
+   "cell": "B7",
+   "label": ""
+  },
+  {
+   "id": "files.1.filename",
+   "sheet": "4 文件清单",
+   "sheet_index": 5,
+   "cell": "C7",
+   "label": ""
+  },
+  {
+   "id": "files.1.method",
+   "sheet": "4 文件清单",
+   "sheet_index": 5,
+   "cell": "D7",
+   "label": ""
+  },
+  {
+   "id": "files.1.submitted",
+   "sheet": "4 文件清单",
+   "sheet_index": 5,
+   "cell": "E7",
+   "label": ""
+  },
+  {
+   "id": "files.2.need",
+   "sheet": "4 文件清单",
+   "sheet_index": 5,
+   "cell": "A8",
+   "label": ""
+  },
+  {
+   "id": "files.2.content",
+   "sheet": "4 文件清单",
+   "sheet_index": 5,
+   "cell": "B8",
+   "label": ""
+  },
+  {
+   "id": "files.2.filename",
+   "sheet": "4 文件清单",
+   "sheet_index": 5,
+   "cell": "C8",
+   "label": ""
+  },
+  {
+   "id": "files.2.method",
+   "sheet": "4 文件清单",
+   "sheet_index": 5,
+   "cell": "D8",
+   "label": ""
+  },
+  {
+   "id": "files.2.submitted",
+   "sheet": "4 文件清单",
+   "sheet_index": 5,
+   "cell": "E8",
+   "label": ""
+  },
+  {
+   "id": "files.3.need",
+   "sheet": "4 文件清单",
+   "sheet_index": 5,
+   "cell": "A9",
+   "label": ""
+  },
+  {
+   "id": "files.3.content",
+   "sheet": "4 文件清单",
+   "sheet_index": 5,
+   "cell": "B9",
+   "label": ""
+  },
+  {
+   "id": "files.3.filename",
+   "sheet": "4 文件清单",
+   "sheet_index": 5,
+   "cell": "C9",
+   "label": ""
+  },
+  {
+   "id": "files.3.method",
+   "sheet": "4 文件清单",
+   "sheet_index": 5,
+   "cell": "D9",
+   "label": ""
+  },
+  {
+   "id": "files.3.submitted",
+   "sheet": "4 文件清单",
+   "sheet_index": 5,
+   "cell": "E9",
+   "label": ""
+  },
+  {
+   "id": "files.4.need",
+   "sheet": "4 文件清单",
+   "sheet_index": 5,
+   "cell": "A10",
+   "label": ""
+  },
+  {
+   "id": "files.4.content",
+   "sheet": "4 文件清单",
+   "sheet_index": 5,
+   "cell": "B10",
+   "label": ""
+  },
+  {
+   "id": "files.4.filename",
+   "sheet": "4 文件清单",
+   "sheet_index": 5,
+   "cell": "C10",
+   "label": ""
+  },
+  {
+   "id": "files.4.method",
+   "sheet": "4 文件清单",
+   "sheet_index": 5,
+   "cell": "D10",
+   "label": ""
+  },
+  {
+   "id": "files.4.submitted",
+   "sheet": "4 文件清单",
+   "sheet_index": 5,
+   "cell": "E10",
+   "label": ""
+  },
+  {
+   "id": "files.5.need",
+   "sheet": "4 文件清单",
+   "sheet_index": 5,
+   "cell": "A11",
+   "label": ""
+  },
+  {
+   "id": "files.5.content",
+   "sheet": "4 文件清单",
+   "sheet_index": 5,
+   "cell": "B11",
+   "label": ""
+  },
+  {
+   "id": "files.5.filename",
+   "sheet": "4 文件清单",
+   "sheet_index": 5,
+   "cell": "C11",
+   "label": ""
+  },
+  {
+   "id": "files.5.method",
+   "sheet": "4 文件清单",
+   "sheet_index": 5,
+   "cell": "D11",
+   "label": ""
+  },
+  {
+   "id": "files.5.submitted",
+   "sheet": "4 文件清单",
+   "sheet_index": 5,
+   "cell": "E11",
+   "label": ""
+  },
+  {
+   "id": "files.6.need",
+   "sheet": "4 文件清单",
+   "sheet_index": 5,
+   "cell": "A12",
+   "label": ""
+  },
+  {
+   "id": "files.6.content",
+   "sheet": "4 文件清单",
+   "sheet_index": 5,
+   "cell": "B12",
+   "label": ""
+  },
+  {
+   "id": "files.6.filename",
+   "sheet": "4 文件清单",
+   "sheet_index": 5,
+   "cell": "C12",
+   "label": ""
+  },
+  {
+   "id": "files.6.method",
+   "sheet": "4 文件清单",
+   "sheet_index": 5,
+   "cell": "D12",
+   "label": ""
+  },
+  {
+   "id": "files.6.submitted",
+   "sheet": "4 文件清单",
+   "sheet_index": 5,
+   "cell": "E12",
+   "label": ""
+  },
+  {
+   "id": "files.7.need",
+   "sheet": "4 文件清单",
+   "sheet_index": 5,
+   "cell": "A13",
+   "label": ""
+  },
+  {
+   "id": "files.7.content",
+   "sheet": "4 文件清单",
+   "sheet_index": 5,
+   "cell": "B13",
+   "label": ""
+  },
+  {
+   "id": "files.7.filename",
+   "sheet": "4 文件清单",
+   "sheet_index": 5,
+   "cell": "C13",
+   "label": ""
+  },
+  {
+   "id": "files.7.method",
+   "sheet": "4 文件清单",
+   "sheet_index": 5,
+   "cell": "D13",
+   "label": ""
+  },
+  {
+   "id": "files.7.submitted",
+   "sheet": "4 文件清单",
+   "sheet_index": 5,
+   "cell": "E13",
+   "label": ""
+  },
+  {
+   "id": "files.8.need",
+   "sheet": "4 文件清单",
+   "sheet_index": 5,
+   "cell": "A14",
+   "label": ""
+  },
+  {
+   "id": "files.8.content",
+   "sheet": "4 文件清单",
+   "sheet_index": 5,
+   "cell": "B14",
+   "label": ""
+  },
+  {
+   "id": "files.8.filename",
+   "sheet": "4 文件清单",
+   "sheet_index": 5,
+   "cell": "C14",
+   "label": ""
+  },
+  {
+   "id": "files.8.method",
+   "sheet": "4 文件清单",
+   "sheet_index": 5,
+   "cell": "D14",
+   "label": ""
+  },
+  {
+   "id": "files.8.submitted",
+   "sheet": "4 文件清单",
+   "sheet_index": 5,
+   "cell": "E14",
+   "label": ""
+  },
+  {
+   "id": "files.9.need",
+   "sheet": "4 文件清单",
+   "sheet_index": 5,
+   "cell": "A15",
+   "label": ""
+  },
+  {
+   "id": "files.9.content",
+   "sheet": "4 文件清单",
+   "sheet_index": 5,
+   "cell": "B15",
+   "label": ""
+  },
+  {
+   "id": "files.9.filename",
+   "sheet": "4 文件清单",
+   "sheet_index": 5,
+   "cell": "C15",
+   "label": ""
+  },
+  {
+   "id": "files.9.method",
+   "sheet": "4 文件清单",
+   "sheet_index": 5,
+   "cell": "D15",
+   "label": ""
+  },
+  {
+   "id": "files.9.submitted",
+   "sheet": "4 文件清单",
+   "sheet_index": 5,
+   "cell": "E15",
+   "label": ""
+  },
+  {
+   "id": "files.10.need",
+   "sheet": "4 文件清单",
+   "sheet_index": 5,
+   "cell": "A16",
+   "label": ""
+  },
+  {
+   "id": "files.10.content",
+   "sheet": "4 文件清单",
+   "sheet_index": 5,
+   "cell": "B16",
+   "label": ""
+  },
+  {
+   "id": "files.10.filename",
+   "sheet": "4 文件清单",
+   "sheet_index": 5,
+   "cell": "C16",
+   "label": ""
+  },
+  {
+   "id": "files.10.method",
+   "sheet": "4 文件清单",
+   "sheet_index": 5,
+   "cell": "D16",
+   "label": ""
+  },
+  {
+   "id": "files.10.submitted",
+   "sheet": "4 文件清单",
+   "sheet_index": 5,
+   "cell": "E16",
+   "label": ""
+  },
+  {
+   "id": "files.11.need",
+   "sheet": "4 文件清单",
+   "sheet_index": 5,
+   "cell": "A17",
+   "label": ""
+  },
+  {
+   "id": "files.11.content",
+   "sheet": "4 文件清单",
+   "sheet_index": 5,
+   "cell": "B17",
+   "label": ""
+  },
+  {
+   "id": "files.11.filename",
+   "sheet": "4 文件清单",
+   "sheet_index": 5,
+   "cell": "C17",
+   "label": ""
+  },
+  {
+   "id": "files.11.method",
+   "sheet": "4 文件清单",
+   "sheet_index": 5,
+   "cell": "D17",
+   "label": ""
+  },
+  {
+   "id": "files.11.submitted",
+   "sheet": "4 文件清单",
+   "sheet_index": 5,
+   "cell": "E17",
+   "label": ""
+  },
+  {
+   "id": "devices.0.name",
+   "sheet": "5 特殊设备",
+   "sheet_index": 6,
+   "cell": "C4",
+   "label": "设备叫法 / 用途"
+  },
+  {
+   "id": "devices.1.name",
+   "sheet": "5 特殊设备",
+   "sheet_index": 6,
+   "cell": "D4",
+   "label": "设备叫法 / 用途"
+  },
+  {
+   "id": "devices.2.name",
+   "sheet": "5 特殊设备",
+   "sheet_index": 6,
+   "cell": "E4",
+   "label": "设备叫法 / 用途"
+  },
+  {
+   "id": "devices.3.name",
+   "sheet": "5 特殊设备",
+   "sheet_index": 6,
+   "cell": "F4",
+   "label": "设备叫法 / 用途"
+  },
+  {
+   "id": "devices.0.type",
+   "sheet": "5 特殊设备",
+   "sheet_index": 6,
+   "cell": "C5",
+   "label": "设备类型"
+  },
+  {
+   "id": "devices.1.type",
+   "sheet": "5 特殊设备",
+   "sheet_index": 6,
+   "cell": "D5",
+   "label": "设备类型"
+  },
+  {
+   "id": "devices.2.type",
+   "sheet": "5 特殊设备",
+   "sheet_index": 6,
+   "cell": "E5",
+   "label": "设备类型"
+  },
+  {
+   "id": "devices.3.type",
+   "sheet": "5 特殊设备",
+   "sheet_index": 6,
+   "cell": "F5",
+   "label": "设备类型"
+  },
+  {
+   "id": "devices.0.model",
+   "sheet": "5 特殊设备",
+   "sheet_index": 6,
+   "cell": "C6",
+   "label": "品牌和型号（看铭牌）"
+  },
+  {
+   "id": "devices.1.model",
+   "sheet": "5 特殊设备",
+   "sheet_index": 6,
+   "cell": "D6",
+   "label": "品牌和型号（看铭牌）"
+  },
+  {
+   "id": "devices.2.model",
+   "sheet": "5 特殊设备",
+   "sheet_index": 6,
+   "cell": "E6",
+   "label": "品牌和型号（看铭牌）"
+  },
+  {
+   "id": "devices.3.model",
+   "sheet": "5 特殊设备",
+   "sheet_index": 6,
+   "cell": "F6",
+   "label": "品牌和型号（看铭牌）"
+  },
+  {
+   "id": "devices.0.os",
+   "sheet": "5 特殊设备",
+   "sheet_index": 6,
+   "cell": "C7",
+   "label": "系统（看“关于”或“设置”页，不知道就拍照）"
+  },
+  {
+   "id": "devices.1.os",
+   "sheet": "5 特殊设备",
+   "sheet_index": 6,
+   "cell": "D7",
+   "label": "系统（看“关于”或“设置”页，不知道就拍照）"
+  },
+  {
+   "id": "devices.2.os",
+   "sheet": "5 特殊设备",
+   "sheet_index": 6,
+   "cell": "E7",
+   "label": "系统（看“关于”或“设置”页，不知道就拍照）"
+  },
+  {
+   "id": "devices.3.os",
+   "sheet": "5 特殊设备",
+   "sheet_index": 6,
+   "cell": "F7",
+   "label": "系统（看“关于”或“设置”页，不知道就拍照）"
+  },
+  {
+   "id": "devices.0.can_install",
+   "sheet": "5 特殊设备",
+   "sheet_index": 6,
+   "cell": "C8",
+   "label": "能不能自己装软件"
+  },
+  {
+   "id": "devices.1.can_install",
+   "sheet": "5 特殊设备",
+   "sheet_index": 6,
+   "cell": "D8",
+   "label": "能不能自己装软件"
+  },
+  {
+   "id": "devices.2.can_install",
+   "sheet": "5 特殊设备",
+   "sheet_index": 6,
+   "cell": "E8",
+   "label": "能不能自己装软件"
+  },
+  {
+   "id": "devices.3.can_install",
+   "sheet": "5 特殊设备",
+   "sheet_index": 6,
+   "cell": "F8",
+   "label": "能不能自己装软件"
+  },
+  {
+   "id": "devices.0.vendor",
+   "sheet": "5 特殊设备",
+   "sheet_index": 6,
+   "cell": "C9",
+   "label": "厂商或维保方，怎么联系"
+  },
+  {
+   "id": "devices.1.vendor",
+   "sheet": "5 特殊设备",
+   "sheet_index": 6,
+   "cell": "D9",
+   "label": "厂商或维保方，怎么联系"
+  },
+  {
+   "id": "devices.2.vendor",
+   "sheet": "5 特殊设备",
+   "sheet_index": 6,
+   "cell": "E9",
+   "label": "厂商或维保方，怎么联系"
+  },
+  {
+   "id": "devices.3.vendor",
+   "sheet": "5 特殊设备",
+   "sheet_index": 6,
+   "cell": "F9",
+   "label": "厂商或维保方，怎么联系"
+  },
+  {
+   "id": "devices.0.warranty",
+   "sheet": "5 特殊设备",
+   "sheet_index": 6,
+   "cell": "C10",
+   "label": "改动会不会影响保修"
+  },
+  {
+   "id": "devices.1.warranty",
+   "sheet": "5 特殊设备",
+   "sheet_index": 6,
+   "cell": "D10",
+   "label": "改动会不会影响保修"
+  },
+  {
+   "id": "devices.2.warranty",
+   "sheet": "5 特殊设备",
+   "sheet_index": 6,
+   "cell": "E10",
+   "label": "改动会不会影响保修"
+  },
+  {
+   "id": "devices.3.warranty",
+   "sheet": "5 特殊设备",
+   "sheet_index": 6,
+   "cell": "F10",
+   "label": "改动会不会影响保修"
+  },
+  {
+   "id": "devices.0.network",
+   "sheet": "5 特殊设备",
+   "sheet_index": 6,
+   "cell": "C11",
+   "label": "联网情况"
+  },
+  {
+   "id": "devices.1.network",
+   "sheet": "5 特殊设备",
+   "sheet_index": 6,
+   "cell": "D11",
+   "label": "联网情况"
+  },
+  {
+   "id": "devices.2.network",
+   "sheet": "5 特殊设备",
+   "sheet_index": 6,
+   "cell": "E11",
+   "label": "联网情况"
+  },
+  {
+   "id": "devices.3.network",
+   "sheet": "5 特殊设备",
+   "sheet_index": 6,
+   "cell": "F11",
+   "label": "联网情况"
+  },
+  {
+   "id": "devices.0.owner",
+   "sheet": "5 特殊设备",
+   "sheet_index": 6,
+   "cell": "C12",
+   "label": "公司里谁负责这台设备"
+  },
+  {
+   "id": "devices.1.owner",
+   "sheet": "5 特殊设备",
+   "sheet_index": 6,
+   "cell": "D12",
+   "label": "公司里谁负责这台设备"
+  },
+  {
+   "id": "devices.2.owner",
+   "sheet": "5 特殊设备",
+   "sheet_index": 6,
+   "cell": "E12",
+   "label": "公司里谁负责这台设备"
+  },
+  {
+   "id": "devices.3.owner",
+   "sheet": "5 特殊设备",
+   "sheet_index": 6,
+   "cell": "F12",
+   "label": "公司里谁负责这台设备"
+  },
+  {
+   "id": "devices.0.vendor_onsite",
+   "sheet": "5 特殊设备",
+   "sheet_index": 6,
+   "cell": "C13",
+   "label": "厂商工程师能不能到场配合"
+  },
+  {
+   "id": "devices.1.vendor_onsite",
+   "sheet": "5 特殊设备",
+   "sheet_index": 6,
+   "cell": "D13",
+   "label": "厂商工程师能不能到场配合"
+  },
+  {
+   "id": "devices.2.vendor_onsite",
+   "sheet": "5 特殊设备",
+   "sheet_index": 6,
+   "cell": "E13",
+   "label": "厂商工程师能不能到场配合"
+  },
+  {
+   "id": "devices.3.vendor_onsite",
+   "sheet": "5 特殊设备",
+   "sheet_index": 6,
+   "cell": "F13",
+   "label": "厂商工程师能不能到场配合"
+  },
+  {
+   "id": "devices.0.downtime",
+   "sheet": "5 特殊设备",
+   "sheet_index": 6,
+   "cell": "C14",
+   "label": "什么时候可以停下来调试"
+  },
+  {
+   "id": "devices.1.downtime",
+   "sheet": "5 特殊设备",
+   "sheet_index": 6,
+   "cell": "D14",
+   "label": "什么时候可以停下来调试"
+  },
+  {
+   "id": "devices.2.downtime",
+   "sheet": "5 特殊设备",
+   "sheet_index": 6,
+   "cell": "E14",
+   "label": "什么时候可以停下来调试"
+  },
+  {
+   "id": "devices.3.downtime",
+   "sheet": "5 特殊设备",
+   "sheet_index": 6,
+   "cell": "F14",
+   "label": "什么时候可以停下来调试"
+  },
+  {
+   "id": "devices.0.interfaces",
+   "sheet": "5 特殊设备",
+   "sheet_index": 6,
+   "cell": "C15",
+   "label": "有哪些接口（网口、串口、USB 等，拍照即可）"
+  },
+  {
+   "id": "devices.1.interfaces",
+   "sheet": "5 特殊设备",
+   "sheet_index": 6,
+   "cell": "D15",
+   "label": "有哪些接口（网口、串口、USB 等，拍照即可）"
+  },
+  {
+   "id": "devices.2.interfaces",
+   "sheet": "5 特殊设备",
+   "sheet_index": 6,
+   "cell": "E15",
+   "label": "有哪些接口（网口、串口、USB 等，拍照即可）"
+  },
+  {
+   "id": "devices.3.interfaces",
+   "sheet": "5 特殊设备",
+   "sheet_index": 6,
+   "cell": "F15",
+   "label": "有哪些接口（网口、串口、USB 等，拍照即可）"
+  },
+  {
+   "id": "devices.0.data_flow",
+   "sheet": "5 特殊设备",
+   "sheet_index": 6,
+   "cell": "C16",
+   "label": "数据怎么进出（导出文件、共享文件夹、上位机软件、只能看屏幕……）"
+  },
+  {
+   "id": "devices.1.data_flow",
+   "sheet": "5 特殊设备",
+   "sheet_index": 6,
+   "cell": "D16",
+   "label": "数据怎么进出（导出文件、共享文件夹、上位机软件、只能看屏幕……）"
+  },
+  {
+   "id": "devices.2.data_flow",
+   "sheet": "5 特殊设备",
+   "sheet_index": 6,
+   "cell": "E16",
+   "label": "数据怎么进出（导出文件、共享文件夹、上位机软件、只能看屏幕……）"
+  },
+  {
+   "id": "devices.3.data_flow",
+   "sheet": "5 特殊设备",
+   "sheet_index": 6,
+   "cell": "F16",
+   "label": "数据怎么进出（导出文件、共享文件夹、上位机软件、只能看屏幕……）"
+  },
+  {
+   "id": "devices.0.photos",
+   "sheet": "5 特殊设备",
+   "sheet_index": 6,
+   "cell": "C17",
+   "label": "照片文件名（铭牌、关于页、接口、操作界面）"
+  },
+  {
+   "id": "devices.1.photos",
+   "sheet": "5 特殊设备",
+   "sheet_index": 6,
+   "cell": "D17",
+   "label": "照片文件名（铭牌、关于页、接口、操作界面）"
+  },
+  {
+   "id": "devices.2.photos",
+   "sheet": "5 特殊设备",
+   "sheet_index": 6,
+   "cell": "E17",
+   "label": "照片文件名（铭牌、关于页、接口、操作界面）"
+  },
+  {
+   "id": "devices.3.photos",
+   "sheet": "5 特殊设备",
+   "sheet_index": 6,
+   "cell": "F17",
+   "label": "照片文件名（铭牌、关于页、接口、操作界面）"
+  }
+ ]
+}

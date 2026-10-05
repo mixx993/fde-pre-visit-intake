@@ -21,6 +21,18 @@ def flatten(obj, prefix=""):
         yield prefix[:-1], str(obj).strip()
 
 
+def load_answers(path):
+    """Read answers.json; also accepts text pasted from a chat AI (code fences, text around the JSON)."""
+    text = open(path, encoding="utf-8-sig").read()
+    try:
+        return json.loads(text)
+    except json.JSONDecodeError:
+        start, end = text.find("{"), text.rfind("}")
+        if start < 0 or end <= start:
+            raise
+        return json.loads(text[start:end + 1])
+
+
 def set_cell(xml, cell, text):
     pattern = re.compile(r'<c r="%s"((?: s="\d+")?)[^>]*?(?:/>|>.*?</c>)' % cell, re.S)
     value = '<c r="%s"\\1 t="inlineStr"><is><t xml:space="preserve">%s</t></is></c>' % (
@@ -37,7 +49,7 @@ def main():
 
     meta = json.load(open(os.path.join(TEMPLATE_DIR, "fields.json"), encoding="utf-8"))
     where = {f["id"]: (f["sheet_index"], f["cell"]) for f in meta["fields"]}
-    answers = json.load(open(args.answers, encoding="utf-8"))
+    answers = load_answers(args.answers)
 
     edits, unknown = {}, []
     for key, val in flatten(answers):

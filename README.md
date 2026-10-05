@@ -25,6 +25,18 @@ FDE 上门的时间很贵，应该花在只有现场才能做的事上：看员�
 3. 大约 20 分钟，可以随时停，下次接着填；任何问题都可以说“跳过”。结果保存在桌面的“上门前信息表”文件夹里。
 4. 客户自己把 Excel、录屏和截图通过网盘或 U 盘发给 FDE。
 
+### 备选：客户只有豆包这类聊天 AI 时
+
+**优先用 skill。**只有客户没有能运行 skill 的 AI 工具时，才用这个备选方案：把 [fallback/聊天AI版提示词.txt](fallback/聊天AI版提示词.txt) 发给客户，客户在豆包、Kimi、DeepSeek 等聊天 AI 里新建对话，整段粘贴进去，按提问回答。问题和规则与 skill 相同，但有三点不如 skill：
+
+- AI 不能查看电脑，配置和软件版本要靠客户截图；
+- 客户这边不能自动生成 Excel：AI 最后输出一段文字总结和一段数据，客户复制发给 FDE，FDE 用下面的命令转成 Excel（脚本能直接读取从聊天里复制的内容，包括外面的代码块标记）；
+- 对话内容会经过聊天工具的服务器，做不到“数据只留在本机”。提示词里会提醒客户不要发敏感信息，截图前先打码。
+
+```bash
+python3 fde-pre-visit-intake/scripts/fill_form.py --answers 客户发来的内容.txt --out 上门前信息表_已填.xlsx
+```
+
 ### 表格包含什么
 
 | 表 | 内容 |
@@ -57,6 +69,7 @@ fde-pre-visit-intake/          # skill 本体，整个文件夹交给客户
   scripts/collect_env.ps1      # Windows 只读环境检查（PowerShell 5.1，无需安装）
   scripts/fill_form.ps1        # Windows 按 answers.json 填表（无需安装）
   scripts/fill_form.py         # Mac/Linux/国产系统填表（只用 Python 标准库）
+fallback/聊天AI版提示词.txt     # 备选：给只有聊天 AI 的客户
 tools/build_template.py        # 修改表格后重新生成模板和 fields.json（需要 openpyxl）
 examples/answers.example.json  # answers.json 示例（虚构数据）
 docs/客户安装说明.md
@@ -114,6 +127,18 @@ With this skill the client fills in the form by chatting with their own AI tool.
 3. About 20 minutes. The client can skip any question, stop at any point and resume later; answers are saved to a folder on the desktop.
 4. The client sends the Excel file, screen recordings and screenshots to the FDE through cloud storage or a USB drive.
 
+### Fallback: when the client only has a chat AI
+
+**Use the skill first.** Only when the client has no AI tool that can run skills, send them [fallback/聊天AI版提示词.txt](fallback/聊天AI版提示词.txt) (Chinese). They paste it into a new conversation in a chat AI such as Doubao, Kimi or DeepSeek and answer the questions. The questions and rules are the same as the skill's, with three trade-offs:
+
+- The AI cannot look at the PC, so specs and versions come from screenshots;
+- No Excel on the client side: the AI ends with a written summary and a JSON block that the client copies to the FDE, who converts it with the command below (the filler accepts text pasted straight from a chat, code fences included);
+- The conversation passes through the chat provider's servers, so data does not stay on the client's machine. The prompt tells the client not to share sensitive information and to blur screenshots first.
+
+```bash
+python3 fde-pre-visit-intake/scripts/fill_form.py --answers pasted_from_client.txt --out filled.xlsx
+```
+
 ### What the form covers
 
 | Sheet | Contents |
@@ -146,6 +171,7 @@ fde-pre-visit-intake/          # the skill itself; hand this whole folder to the
   scripts/collect_env.ps1      # Windows read-only PC snapshot (PowerShell 5.1, no installs)
   scripts/fill_form.ps1        # Windows form filler from answers.json (no installs)
   scripts/fill_form.py         # Mac/Linux form filler (Python standard library only)
+fallback/聊天AI版提示词.txt     # fallback prompt for clients with only a chat AI
 tools/build_template.py        # regenerate the template and fields.json after edits (needs openpyxl)
 examples/answers.example.json  # sample answers.json (fictional data)
 docs/客户安装说明.md            # client install guide (Chinese)

@@ -22,7 +22,7 @@ FDE 上门的时间很贵，应该花在只有现场才能做的事上：看员�
 
 1. 安装，见 [docs/客户安装说明.md](docs/客户安装说明.md)，或者直接下载 [Releases](https://github.com/mixx993/fde-pre-visit-intake/releases) 里的 zip。
 2. 对 AI 说：**帮我填上门前信息表**。
-3. 大约 20 分钟，可以随时停，下次接着填。结果保存在桌面的“上门前信息表”文件夹里。
+3. 大约 20 分钟，可以随时停，下次接着填；任何问题都可以说“跳过”。结果保存在桌面的“上门前信息表”文件夹里。
 4. 客户自己把 Excel、录屏和截图通过网盘或 U 盘发给 FDE。
 
 ### 表格包含什么
@@ -40,6 +40,7 @@ FDE 上门的时间很贵，应该花在只有现场才能做的事上：看员�
 
 这些规则写在 [SKILL.md](fde-pre-visit-intake/SKILL.md) 里，AI 必须遵守：
 
+- 任何问题、任何一整部分都可以跳过，不需要理由；AI 不追问、不劝说，也不替客户猜答案。表里分开标记“不清楚”和“（跳过）”，FDE 能看出格子为什么是空的。
 - 不问、不记任何密码；建议账号和商品用代号。
 - 查看电脑**只读**，每次查看前先说明要看什么，客户同意后才运行；不安装、不修改、不删除任何东西。
 - 不读文档、聊天记录、浏览器数据；统计成片大小时只看文件大小，不看文件名。
@@ -110,7 +111,7 @@ With this skill the client fills in the form by chatting with their own AI tool.
 
 1. Install it: see [docs/客户安装说明.md](docs/客户安装说明.md) (Chinese), or download the zip from [Releases](https://github.com/mixx993/fde-pre-visit-intake/releases).
 2. Tell the AI: **帮我填上门前信息表** ("help me fill in the pre-visit form").
-3. About 20 minutes. The client can stop at any point and resume later; answers are saved to a folder on the desktop.
+3. About 20 minutes. The client can skip any question, stop at any point and resume later; answers are saved to a folder on the desktop.
 4. The client sends the Excel file, screen recordings and screenshots to the FDE through cloud storage or a USB drive.
 
 ### What the form covers
@@ -128,6 +129,7 @@ With this skill the client fills in the form by chatting with their own AI tool.
 
 These rules are written into [SKILL.md](fde-pre-visit-intake/SKILL.md) and the AI must follow them:
 
+- Any question or whole section can be skipped without giving a reason. The AI does not press, persuade or guess the answer, and the form marks "不清楚" (don't know) and "（跳过）" (skipped) separately, so the FDE can tell why a cell is empty.
 - Never ask for or record any password; suggest code names for accounts and products.
 - PC checks are **read-only**. Before each check the AI explains what it will look at and runs it only after the client agrees. Nothing is installed, changed or deleted.
 - No reading of documents, chat history or browser data. When sizing video files, only file sizes are read, not file names.
